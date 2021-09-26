@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #caf0f8;
+}
+
+header {
+    margin: 30px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'roboto';
+}
+
+h1 .main-title{
+    font-style: italic;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'roboto';
+}
+
+.selections{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.selection{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+    transition: 100ms;
+}
+
+.selection:hover{
+    transform: scale(1.2);
+}
+
+.container-results{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 90vw;
+    height: auto;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.results{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.text-score{
+    font-family: 'roboto';
+}
+
+.result-score{
+    margin-left: .1rem;
+}
+
+.result-selection{
+    opacity: .5;
+    font-size: 2rem;
+}
+
+.result-selection-winner{
+    opacity: 1;
+    font-size: 3rem;
+}
